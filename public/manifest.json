@@ -1,0 +1,17 @@
+{
+  "name": "Meal Tracker",
+  "short_name": "Meals",
+  "description": "Track your daily meals with photos",
+  "start_url": "/diet-app-react/",
+  "scope": "/diet-app-react/",
+  "display": "standalone",
+  "background_color": "#0f0f1a",
+  "theme_color": "#0f0f1a",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
