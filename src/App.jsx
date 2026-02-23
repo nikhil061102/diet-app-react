@@ -22,7 +22,7 @@ import {
   blobToURL,
   revokeURL,
 } from "./lib/mealDB";
-import { initNotifications, sendTestNotification } from "./lib/notifications";
+import { initNotifications } from "./lib/notifications";
 
 export default function App() {
   const [currentWeekStart, setCurrentWeekStart] = useState(() =>
@@ -323,16 +323,6 @@ export default function App() {
       {/* Header */}
       <header className="text-center pt-5 px-4 pb-2">
         <div className="flex items-center justify-center relative">
-          <button
-            onClick={async () => {
-              const ok = await sendTestNotification();
-              showToastMsg(ok ? "Test notification sent!" : "Notifications not allowed");
-            }}
-            className="absolute left-0 w-10 h-10 rounded-xl bg-white/8 flex items-center justify-center text-xl hover:bg-white/15 transition-colors"
-            title="Test notification"
-          >
-            🔔
-          </button>
           <h1 className="text-2xl font-bold tracking-tight">🍽️ Meal Tracker</h1>
           <button
             onClick={openHistory}

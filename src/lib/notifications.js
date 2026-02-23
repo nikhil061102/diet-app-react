@@ -48,13 +48,6 @@ export function scheduleNotifications() {
   });
 }
 
-export async function sendTestNotification() {
-  const granted = await requestNotificationPermission();
-  if (!granted) return false;
-  showMealReminder("test");
-  return true;
-}
-
 export async function initNotifications() {
   const granted = await requestNotificationPermission();
   if (granted) scheduleNotifications();

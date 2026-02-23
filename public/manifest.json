@@ -1,3 +1,4 @@
+
 {
   "name": "Meal Tracker",
   "short_name": "Meals",
@@ -5,13 +6,33 @@
   "start_url": "/diet-app-react/",
   "scope": "/diet-app-react/",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#0f0f1a",
   "theme_color": "#0f0f1a",
   "icons": [
     {
-      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>",
-      "sizes": "any",
-      "type": "image/svg+xml"
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }
